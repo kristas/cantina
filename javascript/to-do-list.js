@@ -1,6 +1,6 @@
 YUI().add('to-do-list', function (Y) {
 
-	var counter = 0,
+  var counter = 0,
       TO_DO_ITEM_TEMPLATE =
       '<div class="to-do-item">\
         <input type="checkbox" id="to-do-item-{counter}"><label for="to-do-item-{counter}" class="to-do-item-desc">{desc}</label>\
@@ -19,13 +19,6 @@ YUI().add('to-do-list', function (Y) {
           '.to-do-item',
           this
       );
-/*      Y.one('#list-items').delegate(
-          'click',
-          this._toggleItemStatus,
-          '.to-do-item input[type="checked"]',
-          this
-      );
-*/
     },
 
     /**
