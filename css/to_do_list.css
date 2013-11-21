@@ -76,6 +76,21 @@ button {
 	padding: 7px;
 }
 
+#add-to-do {
+	display: inline-block;
+  padding: 8px 10px;
+  font-size: 1.1em;
+  font-weight: 100;
+}
+
+#add-to-do-small {
+	display: none;
+}
+
+#to-do-desc {
+	width: 85%;
+}
+
 /* Portrait */
 @media screen and (orientation:portrait) {
 
@@ -108,17 +123,6 @@ button {
 
 /* Landscape */
 @media screen and (orientation:landscape) {
-
-	#add-to-do-small {
-		display: none;
-	}
-
-	#add-to-do {
-		display: inline-block;
-	  padding: 8px 10px;
-	  font-size: 1.1em;
-	  font-weight: 100;
-	}
 
 	#to-do-list {
 		display: block;
@@ -158,5 +162,4 @@ button {
 			width: 70%;
 		}
 	}
-
 }
