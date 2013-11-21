@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/to_do_list.css">
+</head>
+<body>
+  <div id="to-do-list">
+    <div class="header-background header">
+      <form id="create-task">
+        <span>
+          <input type="text" id="to-do-desc" placeholder="What do you need to get done?"/>
+        </span>
+        <button type="submit" id="add-to-do">Add To-do</button>
+        <button type="submit" id="add-to-do-small">+</button>
+      </form>
+    </div>
+    <div id="list-items">
+    </div>
+  </div>
+</body>
+<script src="http://yui.yahooapis.com/3.4.1pr1/build/yui/yui-min.js"></script>
+<script src="../javascript/to-do-list.js"></script>
+<script>
+  YUI().use('to-do-list', function(Y){
+    Y.on('domready', function(){
+      var toDoList = new Y.ToDoList();
+    });
+  });
+</script>
+</html>

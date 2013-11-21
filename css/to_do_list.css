@@ -1,0 +1,162 @@
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: .8em;
+	font-weight: lighter;
+	background-color: #ecf0f1;
+}
+
+.header-background {
+  /* fallback */
+  background-color: #ecf0f1;
+
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ecf0f1), to(#dbdbdb));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(top, #ecf0f1, #dbdbdb);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(top, #ecf0f1, #dbdbdb);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(top, #ecf0f1, #dbdbdb);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(top, #ecf0f1, #dbdbdb);
+}
+
+button {
+	float: left;
+	margin-left: -1px;
+	color: #ffffff;
+	border: solid 1px #eeeeee;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+	background: #1c937d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#40b39c), to(#1c937d));
+	background: -moz-linear-gradient(top,  #40b39c,  #1c937d);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#40b39c', endColorstr='#1c937d');
+}
+
+.header {
+	overflow: auto;
+	padding: 5px;
+	clear: both;
+}
+
+#create-task {
+	overflow: auto;
+	display: block;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+#create-task span {
+    overflow: hidden;
+}
+
+#to-do-desc {
+	float: left;
+	margin: 3px 0 0 0;
+	padding: 6px;
+	font-size: 1.1em;
+}
+
+#list-items {
+	width: 100%;
+	background-color: #ffffff;
+}
+
+.completed {
+	color: #cccccc;
+}
+
+.to-do-item {
+	border-top: 1px solid #dddddd;
+	padding: 7px;
+}
+
+/* Portrait */
+@media screen and (orientation:portrait) {
+
+	body {
+		margin: 0;
+		background-color: #ffffff;
+	}
+
+	#add-to-do-small {
+		display: inline-block;
+	  padding: 8px 10px;
+	  margin-top: 2px;
+	  font-size: 1.1em;
+	  font-weight: 100;
+	}
+
+	#to-do-desc {
+		width: 80%;
+	}
+
+	#add-to-do {
+		display: none;
+	}
+
+	.header {
+		width: 100%;
+		margin: 0 5px;
+	}
+}
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+
+	#add-to-do-small {
+		display: none;
+	}
+
+	#add-to-do {
+		display: inline-block;
+	  padding: 8px 10px;
+	  font-size: 1.1em;
+	  font-weight: 100;
+	}
+
+	#to-do-list {
+		display: block;
+	  margin: 55px auto auto auto;
+		border: 1px solid #bbbbbb;
+	}
+
+	/* make textbox expand since it is relative, unlike
+	   button size
+	 */
+	@media (min-width: 1001px) {
+		#to-do-desc {
+			width: 88%;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		#to-do-desc {
+			width: 85%;
+		}
+	}
+
+	@media (max-width: 800px) {
+		#to-do-desc {
+			width: 80%;
+		}
+	}
+
+	@media (max-width: 500px) {
+		#to-do-desc {
+			width: 75%;
+		}
+	}
+
+	@media (max-width: 600px) {
+		#to-do-desc {
+			width: 70%;
+		}
+	}
+
+}
